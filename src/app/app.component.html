@@ -1,0 +1,9 @@
+<div class="wrap-center text-center">
+  <h1 *ngIf="jokes">{{jokes}}</h1>
+  <button class="btn btn-custom-loading mb-3" [class.is-loading]="isLoading" (click)="FetchAPI()">
+    <div class="loader"></div>
+    <span>Give me a joke</span>
+  </button>
+</div>
+
+
